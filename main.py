@@ -1,16 +1,40 @@
-# This is a sample Python script.
+# import library
+import random
+from time import sleep
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Ask how many people will participate on the game.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def people_will_enjoy():
+    pass
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+# Check if the total of players is accept.
+
+def check():
+    pass
+
+
+# Get names of the players.
+
+def users_name(name):
+    pass
+
+
+# Random the names of the players and show who will pay.
+
+def who_will_pay(name):
+    pass
+
+
+# Check if the player will play again.
+
+def question():
+    pass
+
+
+# Finish the game.
+
+def finish():
+
+    pass
