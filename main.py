@@ -11,7 +11,6 @@ def people_will_enjoy():
         print('-=' * 20)
         how_many = int(input('How many people will play it? \nmin 4 people and max 10 people: '))
         check(how_many)
-        #users_name(how_many)
         who_will_pay(users_name(how_many))
     except ValueError:
         print('-=' * 20)
@@ -68,13 +67,38 @@ def who_will_pay(name):
 # Check if the player will play again.
 
 def question():
-   pass
+    while True:
+        answer = ' '
+
+        while answer not in 'YN':
+            print('-=' * 20)
+            answer = str(input('Do you want to try again?  [Y/N]: ')).strip().upper()[0]
+
+            if answer == 'Y':
+                people_will_enjoy()
+                question()
+            if answer == 'N':
+                finish()
+        return
 
 
 # Finish the game.
 
 def finish():
-  pass
+    sleep(0.3)
+    print('-=' * 20)
+    print('Bye', end='')
+    sleep(0.3)
+    print('.', end='')
+    sleep(0.3)
+    print('.', end='')
+    sleep(0.3)
+    print('.', end='')
+    return exit()
 
 
+# Start the game
+
+print('-=' * 20)
+print('\t Welcome to WHO WILL PAY? ')
 people_will_enjoy()
